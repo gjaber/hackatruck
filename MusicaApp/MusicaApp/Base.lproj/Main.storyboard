@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ehw-Z2-NuP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 1-->
+        <scene sceneID="1U5-YK-ldE">
+            <objects>
+                <viewController id="npb-CZ-n7l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RSc-N8-zvn"/>
+                        <viewControllerLayoutGuide type="bottom" id="mWj-Zr-H86"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXA-xf-Ksc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="j9O-Lx-Uui"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coc-T3-0sE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-228"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xSw-Gd-VX9">
+            <objects>
+                <tabBarController id="Ehw-Z2-NuP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1hA-aK-yHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="npb-CZ-n7l" kind="relationship" relationship="viewControllers" id="NBo-9H-6PN"/>
+                        <segue destination="pw3-sA-4i3" kind="relationship" relationship="viewControllers" id="3cW-v3-BVr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUd-zy-3B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-203" y="167"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="PpB-Sj-eSw">
+            <objects>
+                <tableViewController id="pw3-sA-4i3" customClass="MusicaTableViewController" customModule="MusicaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="vAI-Io-X2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicaCell" rowHeight="101" id="Rzu-cm-gfR" customClass="MusicaTableViewCell" customModule="MusicaApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="101"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rzu-cm-gfR" id="QKo-Ru-tNW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1od-Y6-Jf3">
+                                            <rect key="frame" x="18" y="18" width="339" height="64.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSV-kc-Eol">
+                                                    <rect key="frame" x="0.0" y="0.0" width="339" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeE-mp-Mvy">
+                                                    <rect key="frame" x="0.0" y="42.5" width="339" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1od-Y6-Jf3" secondAttribute="trailing" constant="10" id="CXD-lf-pwn"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1od-Y6-Jf3" secondAttribute="bottom" constant="10" id="XHT-fr-fXL"/>
+                                        <constraint firstItem="1od-Y6-Jf3" firstAttribute="leading" secondItem="QKo-Ru-tNW" secondAttribute="leadingMargin" constant="10" id="fKi-jV-Eco"/>
+                                        <constraint firstItem="1od-Y6-Jf3" firstAttribute="top" secondItem="QKo-Ru-tNW" secondAttribute="topMargin" constant="10" id="p9B-pY-aYb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subTituloLabel" destination="HeE-mp-Mvy" id="YS9-oD-7UC"/>
+                                    <outlet property="tituloLabel" destination="dSV-kc-Eol" id="rL1-Ee-qhC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pw3-sA-4i3" id="oVf-u4-0hW"/>
+                            <outlet property="delegate" destination="pw3-sA-4i3" id="DVi-M6-RfD"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="T46-5j-mKy"/>
+                    <connections>
+                        <segue destination="SuB-vO-ZRE" kind="show" identifier="showDetailSegue" id="Jsi-gw-pSz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zei-MU-M4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="517"/>
+        </scene>
+        <!--Artista Detail View Controller-->
+        <scene sceneID="xWz-8m-PJB">
+            <objects>
+                <viewController id="SuB-vO-ZRE" customClass="ArtistaDetailViewController" customModule="MusicaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wUb-5g-WJy"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbd-hV-WFo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vaj-E1-qxR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Artista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG8-LG-hfj">
+                                <rect key="frame" x="87" y="56" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOs-CN-NNE">
+                                <rect key="frame" x="48" y="135" width="281" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml0-zS-wzj">
+                                <rect key="frame" x="59" y="349" width="229" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pbx-T0-haV"/>
+                    <connections>
+                        <outlet property="descricaoLabel" destination="ml0-zS-wzj" id="JL1-7V-nNw"/>
+                        <outlet property="imagem" destination="HOs-CN-NNE" id="rbn-zH-EWC"/>
+                        <outlet property="nomeLabel" destination="TG8-LG-hfj" id="JRY-2I-EQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDl-c1-jJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.5999999999999" y="516.79160419790105"/>
+        </scene>
+    </scenes>
+</document>
