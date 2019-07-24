@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F80A7DA22E7BE36004D4986 /* ArtistaDaSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A7D922E7BE36004D4986 /* ArtistaDaSemanaViewController.swift */; };
+		3F80A7DC22E7C838004D4986 /* DestaqueDaSemanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A7DB22E7C838004D4986 /* DestaqueDaSemanaViewController.swift */; };
 		3FBA7AFA22E6817300DE3796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA7AF922E6817300DE3796 /* AppDelegate.swift */; };
 		3FBA7AFF22E6817300DE3796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA7AFD22E6817300DE3796 /* Main.storyboard */; };
 		3FBA7B0122E6817300DE3796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA7B0022E6817300DE3796 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F80A7D922E7BE36004D4986 /* ArtistaDaSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistaDaSemanaViewController.swift; sourceTree = "<group>"; };
+		3F80A7DB22E7C838004D4986 /* DestaqueDaSemanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestaqueDaSemanaViewController.swift; sourceTree = "<group>"; };
 		3FBA7AF622E6817300DE3796 /* MusicaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBA7AF922E6817300DE3796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBA7AFE22E6817300DE3796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				3FBA7B1022E6847200DE3796 /* MusicaTableViewController.swift */,
 				3FBA7B1322E6849000DE3796 /* MusicaTableViewCell.swift */,
 				3FBA7B1722E6922900DE3796 /* ArtistaDetailViewController.swift */,
+				3F80A7D922E7BE36004D4986 /* ArtistaDaSemanaViewController.swift */,
+				3F80A7DB22E7C838004D4986 /* DestaqueDaSemanaViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				3FBA7AFA22E6817300DE3796 /* AppDelegate.swift in Sources */,
 				3FBA7B1422E6849000DE3796 /* MusicaTableViewCell.swift in Sources */,
 				3FBA7B1622E68A9600DE3796 /* Artista.swift in Sources */,
+				3F80A7DA22E7BE36004D4986 /* ArtistaDaSemanaViewController.swift in Sources */,
+				3F80A7DC22E7C838004D4986 /* DestaqueDaSemanaViewController.swift in Sources */,
 				3FBA7B1122E6847200DE3796 /* MusicaTableViewController.swift in Sources */,
 				3FBA7B1822E6922900DE3796 /* ArtistaDetailViewController.swift in Sources */,
 				3FBA7B0F22E6832A00DE3796 /* Musica.swift in Sources */,
@@ -341,6 +349,7 @@
 				3FBA7B0A22E6817300DE3796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

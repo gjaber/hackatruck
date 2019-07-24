@@ -23,9 +23,11 @@ class Artista {
 
 class ArtistaDAO {
     static func getList() -> [Artista] {
-        Artista(nome: "Artista 1", imagem: artista1, historico: "sdfasdf asdf asdf asdf asd"),
-        Artista(nome: "Artista 2", imagem: artista2, historico: "sdfasdf asdf asdf asdf asd"),
-        Artista(nome: "Artista 3", imagem: artista3, historico: "sdfasdf asdf asdf asdf asd")
+        return [
+            Artista(nome: "Artista 1", imagem: "shakira", historico: "Historico do artista"),
+            Artista(nome: "Artista 2", imagem: "imagem2", historico: "Historico do artista"),
+            Artista(nome: "Artista 3", imagem: "imagem3", historico: "Historico do artista"),
+            Artista(nome: "Artista 4", imagem: "imagem4", historico: "Historico do artista")
+        ]
     }
-    
 }

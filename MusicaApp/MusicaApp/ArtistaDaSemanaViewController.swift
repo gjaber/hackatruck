@@ -1,39 +1,35 @@
 //
-//  ArtistaDetailViewController.swift
+//  DestaqueDaSemanaViewController.swift
 //  MusicaApp
 //
-//  Created by student on 22/07/19.
+//  Created by student on 23/07/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
 import UIKit
 
-class ArtistaDetailViewController: UIViewController {
+class ArtistaDaSemanaViewController: UIViewController {
 
+    
     var artista: Artista?
     
-    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var nomeArtistaLabe: UILabel!
+    @IBOutlet weak var detalheArtistaLabel: UILabel!
+    @IBOutlet weak var imagemArtista: UIImageView!
     
-    @IBOutlet weak var imagem: UIImageView!
-    
-    @IBOutlet weak var descricaoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nomeLabel.text = artista?.nome
-        //imagem.image = UIImage(named: (artista?.imagem)!)
-        descricaoLabel.text = artista?.historico
         
+        nomeArtistaLabe.text = artista?.nome
+        detalheArtistaLabel.text = artista?.historico
+        imagemArtista.image = UIImage(named: (artista?.imagem)!)
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
+/*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -41,6 +37,6 @@ class ArtistaDetailViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+*/
 
 }

@@ -13,7 +13,7 @@
         <!--Item 1-->
         <scene sceneID="1U5-YK-ldE">
             <objects>
-                <viewController id="npb-CZ-n7l" sceneMemberID="viewController">
+                <viewController id="npb-CZ-n7l" customClass="DestaqueDaSemanaViewController" customModule="MusicaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RSc-N8-zvn"/>
                         <viewControllerLayoutGuide type="bottom" id="mWj-Zr-H86"/>
@@ -21,13 +21,101 @@
                     <view key="view" contentMode="scaleToFill" id="lXA-xf-Ksc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destaque da Semana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFC-EF-rY8">
+                                <rect key="frame" x="26" y="30" width="323" height="20.5"/>
+                                <color key="backgroundColor" red="0.77653416450000001" green="0.77653416450000001" blue="0.77653416450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-g4-L3r">
+                                <rect key="frame" x="26" y="76" width="316" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Artista" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uQ-5w-USV">
+                                <rect key="frame" x="26" y="264" width="316" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-lu-8Nm">
+                                <rect key="frame" x="26" y="338" width="316" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-bW-AzF">
+                                <rect key="frame" x="137" y="574" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mais.."/>
+                                <connections>
+                                    <segue destination="5Dg-FJ-fps" kind="show" identifier="maisSegue" id="b0D-KK-Xak"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QFC-EF-rY8" firstAttribute="top" secondItem="RSc-N8-zvn" secondAttribute="bottom" constant="10" id="cld-dy-z3c"/>
+                            <constraint firstItem="QFC-EF-rY8" firstAttribute="leading" secondItem="lXA-xf-Ksc" secondAttribute="leadingMargin" constant="10" id="e6p-8N-JV1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QFC-EF-rY8" secondAttribute="trailing" constant="10" id="uns-f7-Esm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="j9O-Lx-Uui"/>
+                    <connections>
+                        <outlet property="detalheArtistaLabel" destination="i2p-lu-8Nm" id="biu-Tz-Mkr"/>
+                        <outlet property="imagemDestaque" destination="kRb-g4-L3r" id="cWn-wK-WLc"/>
+                        <outlet property="nomeArtistaLabel" destination="3uQ-5w-USV" id="NaU-ul-ZOM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coc-T3-0sE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="-228"/>
+            <point key="canvasLocation" x="672.79999999999995" y="-228.03598200899552"/>
+        </scene>
+        <!--Artista Da Semana View Controller-->
+        <scene sceneID="jSl-SQ-81F">
+            <objects>
+                <viewController id="5Dg-FJ-fps" customClass="ArtistaDaSemanaViewController" customModule="MusicaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z9Z-ra-qpH"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQE-79-sa3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cn2-Lw-YDe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Artista" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y1-BB-MyB">
+                                <rect key="frame" x="16" y="28" width="343" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-9v-0SJ">
+                                <rect key="frame" x="16" y="84" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBd-pe-6M9">
+                                <rect key="frame" x="16" y="248" width="327" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="detalheArtistaLabel" destination="mBd-pe-6M9" id="miR-uY-hxe"/>
+                        <outlet property="imagemArtista" destination="eXp-9v-0SJ" id="0Fh-T9-2b1"/>
+                        <outlet property="nomeArtistaLabe" destination="5Y1-BB-MyB" id="oa3-ou-d4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8l-o9-ijF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472.8" y="-228.03598200899552"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xSw-Gd-VX9">
@@ -91,6 +179,7 @@
                                 <connections>
                                     <outlet property="subTituloLabel" destination="HeE-mp-Mvy" id="YS9-oD-7UC"/>
                                     <outlet property="tituloLabel" destination="dSV-kc-Eol" id="rL1-Ee-qhC"/>
+                                    <segue destination="SuB-vO-ZRE" kind="show" identifier="detalheSegue" id="I2l-IK-yj1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,9 +189,6 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="T46-5j-mKy"/>
-                    <connections>
-                        <segue destination="SuB-vO-ZRE" kind="show" identifier="showDetailSegue" id="Jsi-gw-pSz"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zei-MU-M4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +224,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-dF-3qC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="b31-i8-cT7">
+                                        <barButtonItem key="backBarButtonItem" title="Voltar" id="P36-3s-F76"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

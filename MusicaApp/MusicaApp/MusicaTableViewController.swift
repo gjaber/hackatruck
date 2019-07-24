@@ -12,6 +12,7 @@ class MusicaTableViewController: UITableViewController {
 
     var musicas = [Musica]()
     var artistas = [Artista]()
+    var indice: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,12 +91,21 @@ class MusicaTableViewController: UITableViewController {
     }
     */
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        indice = indexPath.row
+        
+    }
+
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetailSegue" {
-            let musica = musicas[1]
+            let musica = musicas[indice!]
             let artista = artistas[musica.artista]
             if let novaView = segue.destination as? ArtistaDetailViewController {
                 novaView.artista = artista
