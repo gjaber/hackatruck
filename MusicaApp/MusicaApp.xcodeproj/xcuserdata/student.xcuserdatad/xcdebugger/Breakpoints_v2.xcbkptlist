@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MusicaApp/MusicaTableViewController.swift"
@@ -19,14 +19,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MusicaApp.MusicaTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
                   moduleName = "MusicaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/Gerson%20Jaber/hackatruck/MusicaApp/MusicaApp/MusicaTableViewController.swift"
-                  timestampString = "585617010.908648"
+                  timestampString = "585794139.228405"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
@@ -34,14 +34,14 @@
                   offsetFromSymbolStart = "694">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MusicaApp.MusicaTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
                   moduleName = "MusicaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/Gerson%20Jaber/hackatruck/MusicaApp/MusicaApp/MusicaTableViewController.swift"
-                  timestampString = "585617010.912058"
+                  timestampString = "585794139.2316279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
@@ -80,22 +80,6 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MusicaApp/MusicaTableViewController.swift"
-            timestampString = "585617153.103956"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "tableView(tableView:didSelectRowAtIndexPath:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

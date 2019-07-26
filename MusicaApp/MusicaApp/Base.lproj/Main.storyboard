@@ -224,19 +224,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-dF-3qC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="b31-i8-cT7">
-                                        <barButtonItem key="backBarButtonItem" title="Voltar" id="P36-3s-F76"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Pbx-T0-haV"/>
+                    <navigationItem key="navigationItem" id="Pbx-T0-haV">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="vYP-WH-skT"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="descricaoLabel" destination="ml0-zS-wzj" id="JL1-7V-nNw"/>
                         <outlet property="imagem" destination="HOs-CN-NNE" id="rbn-zH-EWC"/>
