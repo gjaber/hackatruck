@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F136D6022EBDBAD00CDA4EB /* EstacionamentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F136D5F22EBDBAD00CDA4EB /* EstacionamentoTableViewController.swift */; };
+		3F136D6222EBDC1900CDA4EB /* EstacionamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F136D6122EBDC1900CDA4EB /* EstacionamentoTableViewCell.swift */; };
 		89FA6F641F196259006B557F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA6F631F196259006B557F /* AppDelegate.swift */; };
 		89FA6F661F196259006B557F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA6F651F196259006B557F /* ViewController.swift */; };
 		89FA6F691F196259006B557F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FA6F671F196259006B557F /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F136D5F22EBDBAD00CDA4EB /* EstacionamentoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstacionamentoTableViewController.swift; sourceTree = "<group>"; };
+		3F136D6122EBDC1900CDA4EB /* EstacionamentoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstacionamentoTableViewCell.swift; sourceTree = "<group>"; };
 		89FA6F601F196259006B557F /* AppIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FA6F631F196259006B557F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89FA6F651F196259006B557F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		89FA6F571F196259006B557F = {
 			isa = PBXGroup;
 			children = (
+				3F136D6122EBDC1900CDA4EB /* EstacionamentoTableViewCell.swift */,
 				89FA6F621F196259006B557F /* AppIOT */,
 				89FA6F611F196259006B557F /* Products */,
 			);
@@ -58,6 +63,7 @@
 			children = (
 				89FA6F631F196259006B557F /* AppDelegate.swift */,
 				89FA6F651F196259006B557F /* ViewController.swift */,
+				3F136D5F22EBDBAD00CDA4EB /* EstacionamentoTableViewController.swift */,
 				89FA6F751F197CD0006B557F /* EstacionamentoDAO.swift */,
 				89FA6F671F196259006B557F /* Main.storyboard */,
 				89FA6F6A1F196259006B557F /* Assets.xcassets */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F136D6222EBDC1900CDA4EB /* EstacionamentoTableViewCell.swift in Sources */,
 				89FA6F661F196259006B557F /* ViewController.swift in Sources */,
+				3F136D6022EBDBAD00CDA4EB /* EstacionamentoTableViewController.swift in Sources */,
 				89FA6F641F196259006B557F /* AppDelegate.swift in Sources */,
 				89FA6F761F197CD0006B557F /* EstacionamentoDAO.swift in Sources */,
 			);
@@ -305,6 +313,7 @@
 				89FA6F741F196259006B557F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
